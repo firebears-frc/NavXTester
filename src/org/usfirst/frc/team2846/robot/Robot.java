@@ -7,6 +7,9 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.SPI;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+/**
+ * Simple program for testing the navX-MXP Board on our robot.
+ */
 public class Robot extends IterativeRobot {
 
 	public static AHRS navXBoard;
@@ -42,6 +45,12 @@ public class Robot extends IterativeRobot {
 		SmartDashboard.putNumber("pitch", navXBoard.getPitch());
 		SmartDashboard.putNumber("roll", navXBoard.getRoll());
 		SmartDashboard.putNumber("yaw", navXBoard.getYaw());
+		SmartDashboard.putNumber("DisplacementX", navXBoard.getDisplacementX());
+		SmartDashboard.putNumber("DisplacementY", navXBoard.getDisplacementY());
+		SmartDashboard.putNumber("DisplacementZ", navXBoard.getDisplacementZ());
+		SmartDashboard.putNumber("VelocityX", navXBoard.getVelocityX());
+		SmartDashboard.putNumber("VelocityY", navXBoard.getVelocityY());
+		SmartDashboard.putNumber("VelocityZ", navXBoard.getVelocityZ());
 	}
 
 	@Override
